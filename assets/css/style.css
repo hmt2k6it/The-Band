@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.text-white {
+  color: #fff !important;
+}
+.clear {
+  clear: both;
+}
+html {
+  font-size: 15px;
+  line-height: 1.5;
+  font-family: "Lato", Helvetica, sans-serif;
+}
+h2 {
+  margin: 10px 0;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+h3 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+p {
+  margin: 15px 0;
+}
+#main {
+}
+#header {
+  height: 46px;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+#header .search-btn {
+  float: right;
+  padding: 0 22px;
+}
+#header .search-btn:hover {
+  cursor: pointer;
+  background-color: #f44336;
+}
+#header .seach-icon {
+  font-size: 18px;
+  color: #fff;
+  line-height: 46px;
+}
+#nav {
+  display: inline-block;
+}
+#nav,
+.subnav {
+  list-style-type: none;
+}
+#nav .subnav {
+  min-width: 160px;
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#nav li:hover .subnav {
+  display: block;
+}
+#nav .subnav a {
+  display: block;
+  color: #000;
+  padding: 0 16px;
+  line-height: 38px;
+}
+#nav > li {
+  display: inline-block;
+}
+#nav li {
+  color: #fff;
+  position: relative;
+}
+#nav > li > a {
+  color: #fff;
+  text-transform: uppercase;
+}
+#nav li a {
+  text-decoration: none;
+  line-height: 46px;
+  padding: 0 24px;
+  display: inline-block;
+}
+#nav .subnav li:hover > a,
+#nav > li:hover > a {
+  background-color: #ccc;
+  color: #000;
+}
+#nav .nav-arrow-down {
+  font-size: 13px;
+}
+/* Slider */
+#slider {
+  position: relative;
+  margin-top: 46px;
+  padding-top: 50%;
+  background: url("/assets/img/ny.jpg") top center / cover no-repeat;
+}
+#slider .text-content {
+  position: absolute;
+  bottom: 0;
+  padding: 32px 16px;
+  color: #fff;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#slider .text-heading {
+  font-weight: 500;
+}
+#content {
+}
+#content .content-section {
+  padding: 64px 0;
+  width: 800px;
+  margin: 0 auto;
+}
+#content .section-heading {
+  text-align: center;
+}
+#content .section-sub-heading {
+  text-align: center;
+  opacity: 0.6;
+}
+#content .about-text {
+  text-align: justify;
+}
+#content .member-list {
+  margin-top: 48px;
+}
+#content .member-item {
+  text-align: center;
+  float: left;
+  width: calc(100% / 3);
+}
+#content .member-img {
+  width: 154px;
+}
+/* Tour-section */
+#content .tour-section {
+  background-color: #000;
+}
+.ticket-list {
+  margin:0 16px;
+  margin-top: 40px;
+  background-color: #fff;
+}
+.ticket-list li {
+  list-style-type: none;
+  color: #757575;
+  padding: 8.5px 16px;
+  border-bottom: 1px solid #ccc;
+}
+.ticket-list .soid-out {
+  margin-left: 16px;
+  padding: 3px 8px;
+  color: #fff;
+  background-color: #f44336;
+}
+.ticket-list .quantity {
+  background-color: #000;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 50%;
+  margin-right: 16px;
+  float: right;
+  line-height: 100%;
+}
+#footer {
+}

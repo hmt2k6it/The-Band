@@ -1,0 +1,8 @@
+1. Header (Đầu trang)
+2. Sidebar (Thanh)
+3. Content (Nội dung)
+ 1.About
+ 2.Tour
+ 3.Contact
+ 4.Image
+4.Footer (Chân trang)

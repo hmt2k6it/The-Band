@@ -1,0 +1,16 @@
+- Position: Static (đối tượng sẽ có vị trí
+ban đầu)
+- Position: Relative (Đinh vị so với vị trí
+ban đầu nó 1 khoảng x)
+    + top:
+    + bottom:
+    + left:
+    + right:
+    * Vị trí ban đầu vẫn bị chiếm chỗ.
+- Position: Absolute (Phần tử thực sự được
+đưa ra khỏi vị trí ban đầu)
+    + Nếu có tổ tiên position: relative
+    thì nó định vị theo tổ tiên
+    + Nếu không có tổ tiên có position: relative
+    thì nó đc định vị góc trên bên trái
+    +Có thể dùng top, bottom, left, right
