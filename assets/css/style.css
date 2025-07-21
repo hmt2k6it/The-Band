@@ -54,6 +54,7 @@
   float: right !important;
 }
 html {
+  scroll-behavior: smooth;
   font-size: 15px;
   line-height: 1.5;
   font-family: "Lato", Helvetica, sans-serif;
