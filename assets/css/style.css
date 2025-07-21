@@ -3,11 +3,55 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/*  */
+.btn {
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 11px 21px;
+  background-color: #000;
+  cursor: pointer;
+}
+.row {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.col {
+  float: left;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.col-half {
+  width: 50%;
+}
+.col-third {
+  width: calc(100% / 3);
+}
+.col-full {
+  width: 100%;
+}
+.text-center {
+  text-align: center !important;
+}
+.mt-8 {
+  margin-top: 8px !important;
+}
+.mt-16 {
+  margin-top: 16px !important;
+}
+/*  */
 .text-white {
   color: #fff !important;
 }
-.clear {
-  clear: both;
+.pull-right {
+  float: right !important;
 }
 html {
   font-size: 15px;
@@ -22,10 +66,6 @@ h2 {
 }
 h3 {
   font-size: 24px;
-  margin: 10px 0;
-}
-p {
-  margin: 15px 0;
 }
 #main {
 }
@@ -118,17 +158,21 @@ p {
 #slider .text-heading {
   font-weight: 500;
 }
+#slider .text-description {
+  margin: 15px 0;
+}
 #content {
 }
 #content .content-section {
-  padding: 64px 0;
-  width: 800px;
+  padding: 64px 0 112px;
+  width: 768px;
   margin: 0 auto;
 }
 #content .section-heading {
   text-align: center;
 }
 #content .section-sub-heading {
+  margin: 15px 0;
   text-align: center;
   opacity: 0.6;
 }
@@ -138,11 +182,6 @@ p {
 #content .member-list {
   margin-top: 48px;
 }
-#content .member-item {
-  text-align: center;
-  float: left;
-  width: calc(100% / 3);
-}
 #content .member-img {
   width: 154px;
 }
@@ -151,7 +190,6 @@ p {
   background-color: #000;
 }
 .ticket-list {
-  margin:0 16px;
   margin-top: 40px;
   background-color: #fff;
 }
@@ -176,5 +214,163 @@ p {
   float: right;
   line-height: 100%;
 }
+/* Place */
+.place-list {
+  margin-top: 32px;
+}
+.place-img {
+  display: block;
+  width: 100%;
+}
+.place-img:hover {
+  opacity: 0.6;
+}
+.place-body {
+  padding: 16px;
+  background-color: #fff;
+}
+.place-heading {
+  font-size: 15px;
+  font-weight: 600;
+}
+.place-time {
+  margin: 15px 0;
+  opacity: 0.6;
+}
+.place-desc {
+  margin: 15px 0;
+}
+
+.place-buy-btn:hover {
+  color: #000;
+  background-color: #ccc;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.open-modal {
+  display: flex;
+}
+.modal .modal-container {
+  position: relative;
+  width: 900px;
+  max-width: calc(100% - 32px);
+  min-width: 200px;
+  background-color: #fff;
+  animation: modal-animation ease 0.5s;
+}
+.modal .modal-header {
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  background-color: rgb(0, 150, 136);
+  padding: 42px 16px;
+}
+.modal .modal-close {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 16px 16px;
+  color: #fff;
+}
+.modal .modal-close:hover {
+  color: #000;
+  background-color: #ccc;
+}
+.modal .modal-body {
+  padding: 0 16px;
+}
+.modal .modal-label {
+  display: block;
+  margin: 15px 0;
+}
+.modal .modal-input {
+  padding: 12px 8px;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+.modal .buy-tickets {
+  border: none;
+  font-size: 15px;
+  width: 100%;
+  margin: 15px 0;
+  padding: 16px;
+  color: #fff;
+  background-color: rgb(0, 150, 136);
+}
+.modal .buy-tickets:hover {
+  background-color: #ccc;
+  color: #000;
+  cursor: pointer;
+}
+.modal .modal-footer {
+  margin-bottom: 16px;
+  padding: 0 16px;
+  text-align: right;
+}
+.modal .modal-footer a {
+  color: #2196f3;
+}
+/* Contact-form */
+.contact-content {
+  margin-top: 42px;
+}
+.contact-info {
+  font-size: 18px;
+}
+.contact-info i {
+  width: 24px;
+  display: inline-block;
+}
+.contact-form {
+  font-size: 15px;
+}
+.form-control {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+.map-section {
+  width: 100%;
+}
 #footer {
+  padding: 64px 16px;
+  text-align: center;
+}
+#footer .socials-list {
+  font-size: 22px;
+}
+#footer .socials-list a {
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+}
+#footer .copyright a:hover,
+#footer .socials-list a:hover {
+  color: rgba(0, 0, 0, 0.3);
+}
+#footer .copyright {
+  margin-top: 15px;
+  color: rgba(0, 0, 0, 0.6);
+}
+#footer .copyright a {
+  color: rgba(0, 0, 0, 0.6);
+}
+@keyframes modal-animation {
+  from {
+    opacity: 0;
+    transform: translateY(-300px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

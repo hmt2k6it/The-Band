@@ -61,8 +61,8 @@
             veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
             ea commodo consequat.
           </p>
-          <div class="member-list">
-            <div class="member-item">
+          <div class="row member-list">
+            <div class="col col-third text-center">
               <p class="member-name">Name</p>
               <img
                 src="./assets/img/bandmember.jpg"
@@ -70,7 +70,7 @@
                 class="member-img"
               />
             </div>
-            <div class="member-item">
+            <div class="col col-third text-center">
               <p class="member-name">Name</p>
               <img
                 src="./assets/img/bandmember.jpg"
@@ -78,7 +78,7 @@
                 class="member-img"
               />
             </div>
-            <div class="member-item">
+            <div class="col col-third text-center">
               <p class="member-name">Name</p>
               <img
                 src="./assets/img/bandmember.jpg"
@@ -86,32 +86,148 @@
                 class="member-img"
               />
             </div>
-            <div class="clear"></div>
           </div>
         </div>
         <!-- TOUR DATES-->
         <div class="tour-section">
           <div class="content-section">
-          <h2 class="section-heading text-white">TOUR DATES</h2>
-          <p class="section-sub-heading text-white">
-            <i>Remember to book your tickets!</i>
-          </p>
-          <ul class="ticket-list">
-            <li>September <span class="soid-out">Soid out</span></li>
-            <li>October<span class="soid-out">Soid out</span></li>
-            <li>November<span class="quantity">3</span></li>
-          </ul>
-        </div>
+            <h2 class="section-heading text-white">TOUR DATES</h2>
+            <p class="section-sub-heading text-white">
+              <i>Remember to book your tickets!</i>
+            </p>
+            <!-- Ticket -->
+            <ul class="ticket-list">
+              <li>September <span class="soid-out">Soid out</span></li>
+              <li>October<span class="soid-out">Soid out</span></li>
+              <li>November<span class="quantity">3</span></li>
+            </ul>
+            <!-- Place -->
+            <div class="row place-list">
+              <div class="col col-third">
+                <img src="./assets/img/newyork.jpg" alt="" class="place-img" />
+                <div class="place-body">
+                  <h3 class="place-heading">New York</h3>
+                  <p class="place-time">Fri 27 Nov 2016</p>
+                  <p class="place-desc">
+                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                  </p>
+                  <button class="js-buy-ticket btn">
+                    Buy Ticket
+                  </button>
+                </div>
+              </div>
+              <div class="col col-third">
+                <img src="./assets/img/paris.jpg" alt="" class="place-img" />
+                <div class="place-body">
+                  <h3 class="place-heading">Paris</h3>
+                  <p class="place-time">Sat 28 Nov 2016</p>
+                  <p class="place-desc">
+                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                  </p>
+                  <button class="js-buy-ticket btn">
+                    Buy Ticket
+                  </button>
+                </div>
+              </div>
+              <div class="col col-third">
+                <img src="./assets/img/sanfran.jpg" alt="" class="place-img" />
+                <div class="place-body">
+                  <h3 class="place-heading">San Francisco</h3>
+                  <p class="place-time">Sun 29 Nov 2016</p>
+                  <p class="place-desc">
+                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                  </p>
+                  <button class="js-buy-ticket btn">
+                    Buy Ticket
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="content-section">
           <h2 class="section-heading">CONTACT</h2>
           <p class="section-sub-heading">
             <i>Fan? Drop a note!</i>
           </p>
+          <div class="contact-content row">
+            <div class="col col-half contact-info">
+              <p><i class="ti-location-pin"></i>Chicago, US</p>
+              <p><i class="ti-mobile"></i>Phone: +00 151515</p>
+              <p><i class="ti-email"></i>Email: mail@mail.com</p>
+            </div>
+            <div class="col col-half contact-form">
+              <form action="">
+                <div class="row">
+                  <div class="col col-half">
+                    <input required type="text" class="form-control" placeholder="Name">
+                  </div>
+                  <div class="col col-half">
+                    <input required type="email" class="form-control" placeholder="Email">
+                  </div>
+                </div>
+                <div class="mt-8 row">
+                  <div class="col col-full">
+                    <input required type="text" class="form-control" placeholder="Message">
+                  </div>
+                </div>
+                <input class="mt-16 pull-right btn" type="submit" value="SEND">
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="map-section">
+          <img src="./assets/img/map.jpg" alt="Map">
         </div>
       </div>
-      <!--  -->
-      <div id="footer"></div>
+      <!--Footer-->
+      <div id="footer">
+        <div class="socials-list">
+          <a href=""><i class="ti-facebook"></i></a>
+          <a href=""><i class="ti-instagram"></i></a>
+          <a href=""><i class="ti-youtube"></i></a>
+          <a href=""><i class="ti-pinterest"></i></a>
+          <a href=""><i class="ti-twitter"></i></a>
+          <a href=""><i class="ti-linkedin"></i></a>
+        </div>
+        <p class="copyright">Powered by <a href="">w3.css</a></p>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modal-container">
+        <div class="modal-close"><i class="ti-close"></i></div>
+        <header class="modal-header">
+          <i class="ti-bag"></i>
+          Tickets
+        </header>
+        <div class="modal-body">
+          <label for="ticket-quantity" class="modal-label">
+            <i class="ti-shopping-cart"></i>
+            Tickets, $15 per person
+          </label>
+          <input
+            type="text"
+            id="ticket-quantity"
+            class="modal-input"
+            placeholder="How many?"
+          />
+          <label for="ticket-email" class="modal-label">
+            <i class="ti-user"></i>
+            Send To
+          </label>
+          <input
+            type="email"
+            id="ticket-email"
+            class="modal-input"
+            placeholder="Enter email"
+          />
+          <button class="buy-tickets">PAY<i class="ti-check"></i></button>
+        </div>
+        <footer class="modal-footer">
+          <p class="modal-help">Need <a href="">help?</a></p>
+        </footer>
+      </div>
     </div>
   </body>
+  <script src="./assets/js/main.js"></script>
 </html>
