@@ -3,8 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./assets/img/favicon-32x32.png" type="image/x-icon">
+    <link
+      rel="icon"
+      href="./assets/img/favicon-32x32.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
     <link
       rel="stylesheet"
       href="./assets/fonts/themify-icons/themify-icons.css"
@@ -35,6 +40,9 @@
         <div class="search-btn">
           <i class="seach-icon ti-search"></i>
         </div>
+        <div id="mobile-menu" class="mobile-menu-btn">
+          <i class="menu-icon ti-menu"></i>
+        </div>
       </div>
       <div id="slider">
         <div class="text-content">
@@ -63,7 +71,7 @@
             ea commodo consequat.
           </p>
           <div class="row member-list">
-            <div class="col col-third text-center">
+            <div class="s-col-full col col-third text-center mt-16">
               <p class="member-name">Name</p>
               <img
                 src="./assets/img/bandmember.jpg"
@@ -71,7 +79,7 @@
                 class="member-img"
               />
             </div>
-            <div class="col col-third text-center">
+            <div class="s-col-full col col-third text-center mt-16">
               <p class="member-name">Name</p>
               <img
                 src="./assets/img/bandmember.jpg"
@@ -79,7 +87,7 @@
                 class="member-img"
               />
             </div>
-            <div class="col col-third text-center">
+            <div class="s-col-full col col-third text-center mt-16">
               <p class="member-name">Name</p>
               <img
                 src="./assets/img/bandmember.jpg"
@@ -103,8 +111,8 @@
               <li>November<span class="quantity">3</span></li>
             </ul>
             <!-- Place -->
-            <div id="contact"class="row place-list">
-              <div class="col col-third">
+            <div class="row place-list">
+              <div class="s-col-full col col-third mt-16">
                 <img src="./assets/img/newyork.jpg" alt="" class="place-img" />
                 <div class="place-body">
                   <h3 class="place-heading">New York</h3>
@@ -112,12 +120,10 @@
                   <p class="place-desc">
                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                   </p>
-                  <button class="js-buy-ticket btn">
-                    Buy Ticket
-                  </button>
+                  <button class="s-full-width js-buy-ticket btn">Buy Ticket</button>
                 </div>
               </div>
-              <div class="col col-third">
+              <div class="s-col-full col col-third mt-16">
                 <img src="./assets/img/paris.jpg" alt="" class="place-img" />
                 <div class="place-body">
                   <h3 class="place-heading">Paris</h3>
@@ -125,12 +131,10 @@
                   <p class="place-desc">
                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                   </p>
-                  <button class="js-buy-ticket btn">
-                    Buy Ticket
-                  </button>
+                  <button class="s-full-width js-buy-ticket btn">Buy Ticket</button>
                 </div>
               </div>
-              <div class="col col-third">
+              <div class="s-col-full col col-third mt-16">
                 <img src="./assets/img/sanfran.jpg" alt="" class="place-img" />
                 <div class="place-body">
                   <h3 class="place-heading">San Francisco</h3>
@@ -138,47 +142,64 @@
                   <p class="place-desc">
                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                   </p>
-                  <button class="js-buy-ticket btn">
-                    Buy Ticket
-                  </button>
+                  <button class="s-full-width js-buy-ticket btn">Buy Ticket</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="content-section">
-          <h2 class="section-heading">CONTACT</h2>
+          <h2 id="contact" class="section-heading">CONTACT</h2>
           <p class="section-sub-heading">
             <i>Fan? Drop a note!</i>
           </p>
           <div class="contact-content row">
-            <div class="col col-half contact-info">
+            <div class="s-col-full col col-half contact-info mt-8">
               <p><i class="ti-location-pin"></i>Chicago, US</p>
               <p><i class="ti-mobile"></i>Phone: +00 151515</p>
               <p><i class="ti-email"></i>Email: mail@mail.com</p>
             </div>
-            <div class="col col-half contact-form">
+            <div class="s-col-full col col-half contact-form">
               <form action="">
                 <div class="row">
-                  <div class="col col-half">
-                    <input required type="text" class="form-control" placeholder="Name">
+                  <div class="s-col-full col col-half mt-8">
+                    <input
+                      required
+                      type="text"
+                      class="form-control"
+                      placeholder="Name"
+                    />
                   </div>
-                  <div class="col col-half">
-                    <input required type="email" class="form-control" placeholder="Email">
+                  <div class="s-col-full col col-half mt-8">
+                    <input
+                      required
+                      type="email"
+                      class="form-control"
+                      placeholder="Email"
+                    />
                   </div>
                 </div>
                 <div class="mt-8 row">
                   <div class="col col-full">
-                    <input required type="text" class="form-control" placeholder="Message">
+                    <input
+                      required
+                      type="text"
+                      class="form-control"
+                      placeholder="Message"
+                    />
                   </div>
                 </div>
-                <input class="mt-16 pull-right btn" type="submit" value="SEND">
+                <input
+                  class="s-full-width mt-16 pull-right btn"
+                  type="submit"
+                  value="SEND"
+                />
               </form>
             </div>
           </div>
         </div>
         <div class="map-section">
-          <img src="./assets/img/map.jpg" alt="Map">
+          <img src="./assets/img/map.jpg" alt="Map" />
         </div>
       </div>
       <!--Footer-->
@@ -231,4 +252,5 @@
     </div>
   </body>
   <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/reponsive.js"></script>
 </html>

@@ -79,6 +79,13 @@ h3 {
   right: 0;
   z-index: 1;
 }
+.open {
+  height: auto !important;
+}
+#mobile-menu {
+  display: none;
+}
+#header .mobile-menu-btn,
 #header .search-btn {
   float: right;
   padding: 0 22px;
@@ -87,6 +94,14 @@ h3 {
   cursor: pointer;
   background-color: #f44336;
 }
+#header .mobile-menu-btn:hover {
+  cursor: pointer;
+  background-color: #ccc;
+}
+#header .mobile-menu-button:hover .menu-icon {
+  color: #000;
+}
+#header .menu-icon,
 #header .seach-icon {
   font-size: 18px;
   color: #fff;
@@ -166,8 +181,11 @@ h3 {
 }
 #content .content-section {
   padding: 64px 0 112px;
+  max-width: 100%;
   width: 768px;
   margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 #content .section-heading {
   text-align: center;
@@ -181,10 +199,13 @@ h3 {
   text-align: justify;
 }
 #content .member-list {
-  margin-top: 48px;
+  margin-top: 32px;
 }
 #content .member-img {
   width: 154px;
+}
+#content .member-name {
+  margin: 16px 0;
 }
 /* Tour-section */
 #content .tour-section {
@@ -217,7 +238,7 @@ h3 {
 }
 /* Place */
 .place-list {
-  margin-top: 32px;
+  margin-top: 16px;
 }
 .place-img {
   display: block;
@@ -323,7 +344,7 @@ h3 {
 }
 /* Contact-form */
 .contact-content {
-  margin-top: 42px;
+  margin-top: 34px;
 }
 .contact-info {
   font-size: 18px;
@@ -341,6 +362,9 @@ h3 {
   border: 1px solid #ccc;
 }
 .map-section {
+  width: 100%;
+}
+.map-section img {
   width: 100%;
 }
 #footer {

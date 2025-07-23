@@ -1,0 +1,43 @@
+/* PC: >=1024px
+   Tablet >= 740px & <1024px
+   Mobile <= 740px
+*/
+@media (max-width: 740px) {
+  #header {
+    overflow: hidden;
+  }
+  #mobile-menu,
+  #nav,
+  #nav > li,
+  #nav > li > a {
+    display: block;
+  }
+  #header .search-btn {
+    display: none;
+  }
+  #header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  #nav > li:first-child {
+    display: inline-block;
+  }
+  #nav .subnav {
+    background-color: #333;
+    position: initial;
+  }
+  #nav .subnav a {
+    padding: 4px 38px;
+    color: #fff;
+  }
+  #content .member-img {
+    width: 60%;
+  }
+  .s-col-full {
+    width: 100%;
+  }
+  .s-full-width {
+    width: 100%;
+  }
+}
