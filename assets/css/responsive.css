@@ -5,13 +5,20 @@
 /* Table */
 @media (max-width: 1023px) {
   #footer .socials-list {
-    font-size: 48px;
+    font-size: 38px;
   }
   #footer .socials-list a {
     margin: 0 8px;
   }
   .btn {
     padding: 16px 21px;
+  }
+  .form-control {
+    padding: 16px;
+    font-size: 18px;
+  }
+  .send-btn {
+    -webkit-appearance: none;
   }
 }
 /* Mobile */
@@ -52,5 +59,8 @@
   }
   .s-full-width {
     width: 100%;
+  }
+  .contact-form {
+    margin-top: 28px;
   }
 }
