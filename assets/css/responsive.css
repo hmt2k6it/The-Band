@@ -2,6 +2,19 @@
    Tablet >= 740px & <1024px
    Mobile <= 740px
 */
+/* Table */
+@media (max-width: 1023px) {
+  #footer .socials-list {
+    font-size: 48px;
+  }
+  #footer .socials-list a {
+    margin: 0 8px;
+  }
+  .btn {
+    padding: 16px 21px;
+  }
+}
+/* Mobile */
 @media (max-width: 740px) {
   #header {
     overflow: hidden;

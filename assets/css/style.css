@@ -262,7 +262,7 @@ h3 {
 .place-desc {
   margin: 15px 0;
 }
-
+.send-btn:hover,
 .place-buy-btn:hover {
   color: #000;
   background-color: #ccc;
